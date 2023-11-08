@@ -8,7 +8,7 @@ app.use(express.json());
 
 // CORS politikalarını yapılandır
 const corsOptions = {
-  origin: "https://techcareer-api2.vercel.app/", // Erişime izin verilen etki alanı (istemci)
+  origin: "*", // Erişime izin verilen etki alanı (istemci)
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
 };
 
