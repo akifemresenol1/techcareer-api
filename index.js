@@ -1,16 +1,18 @@
 // app.js
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = 3001;
 
 app.use(express.json());
 
-// CORS başlıklarını ekleyin
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
-  // Diğer CORS başlıklarını da ayarlayabilirsiniz.
-  next();
-});
+// CORS politikalarını yapılandır
+const corsOptions = {
+  origin: "https://techcareer-api2.vercel.app/", // Erişime izin verilen etki alanı (istemci)
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
+};
+
+app.use(cors(corsOptions));
 
 app.use(express.static("public"));
 
