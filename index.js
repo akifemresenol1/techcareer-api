@@ -8,7 +8,7 @@ app.use(express.json());
 
 // CORS politikalarını yapılandır
 const corsOptions = {
-  origin: "*", // Erişime izin verilen etki alanı (istemci)
+  origin: "http://127.0.0.1:5500", // Erişime izin verilen etki alanı (istemci)
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
 };
 
