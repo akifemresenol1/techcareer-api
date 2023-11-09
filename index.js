@@ -4,6 +4,9 @@ const cors = require("cors");
 const app = express();
 const port = 3001;
 
+// Statik dosyaları sunmak için "public" klasörünü kullan
+app.use(express.static("public"));
+
 app.use(express.json());
 
 // CORS politikalarını yapılandır
@@ -13,9 +16,6 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-
-// Statik dosyaları sunmak için "public" klasörünü kullan
-app.use(express.static("public"));
 
 // Endpoint dosyalarını dahil et
 const filmlerRouter = require("./filmler");
