@@ -1,11 +1,11 @@
-// app.js
 const express = require("express");
 const cors = require("cors");
+const path = require("path"); // path modülünü ekleyin
 const app = express();
 const port = 3001;
 
 // Statik dosyaları sunmak için "public" klasörünü kullan
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.json());
 

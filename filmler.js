@@ -1,6 +1,7 @@
 // filmler.js
 const express = require("express");
 const router = express.Router();
+const path = require("path");
 
 // Film verilerini içeri aktarın
 const filmler = [
@@ -277,7 +278,6 @@ const filmler = [
   // Devam eden veriler buraya eklenir...
 ];
 
-// Filmler için endpointleri işleyin
 router.get("/", (req, res) => {
   res.json(filmler);
 });
@@ -298,7 +298,7 @@ router.get("/:filmId", (req, res) => {
     // Resim yolu tam dosya yoluna dönüştürün
     const filmWithFullResimPath = {
       ...hedefFilm,
-      resim: `public/${hedefFilm.resim}`, // sadece public klasörünü ekledim
+      resim: path.join(__dirname, `public/${hedefFilm.resim}`),
     };
     res.json(filmWithFullResimPath);
   } else {
