@@ -18,15 +18,15 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Endpoint dosyalarını dahil et
-const filmlerRouter = require("./filmler");
-const tiyatroRouter = require("./sayfalar/tiyatro");
-const aileRouter = require("./sayfalar/aile");
-const sporRouter = require("./sayfalar/spor");
+const konserRouter = require("./pages/konser");
+const tiyatroRouter = require("./pages/tiyatro");
+const standUpRouter = require("./pages/standUp");
+const sporRouter = require("./pages/spor");
 
 // Endpoint yollarını belirt
-app.use("/api/filmler", filmlerRouter);
+app.use("/api/konser", konserRouter);
 app.use("/api/tiyatro", tiyatroRouter);
-app.use("/api/aile", aileRouter);
+app.use("/api/standUp", standUpRouter);
 app.use("/api/spor", sporRouter);
 
 app.listen(port, () => {

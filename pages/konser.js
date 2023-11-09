@@ -1,10 +1,8 @@
-// filmler.js
 const express = require("express");
 const router = express.Router();
 const path = require("path");
 
-// Film verilerini içeri aktarın
-const filmler = [
+const konser = [
   {
     id: 1,
     categories: "konser",
@@ -279,30 +277,29 @@ const filmler = [
 ];
 
 router.get("/", (req, res) => {
-  res.json(filmler);
+  res.json(konser);
 });
 
 router.post("/", (req, res) => {
-  const yeniFilm = req.body;
-  const yeniID = Math.max(...filmler.map((item) => item.id)) + 1;
-  yeniFilm.id = yeniID;
-  filmler.push(yeniFilm);
-  res.status(201).json(yeniFilm);
+  const yeniKonser = req.body;
+  const yeniID = Math.max(...konser.map((item) => item.id)) + 1;
+  yeniKonser.id = yeniID;
+  konser.push(yeniKonser);
+  res.status(201).json(yeniKonser);
 });
 
-router.get("/:filmId", (req, res) => {
-  const filmId = parseInt(req.params.filmId);
-  const hedefFilm = filmler.find((film) => film.id === filmId);
+router.get("/:konserId", (req, res) => {
+  const konserId = parseInt(req.params.konserId);
+  const hedefKonser = konser.find((konser) => konser.id === konserId);
 
-  if (hedefFilm) {
-    // Resim yolu tam dosya yoluna dönüştürün
-    const filmWithFullResimPath = {
-      ...hedefFilm,
-      resim: path.join(__dirname, `public/${hedefFilm.resim}`),
+  if (hedefKonser) {
+    const konserWithFullResimPath = {
+      ...hedefKonser,
+      resim: path.join(__dirname, `public/${hedefKonser.resim}`),
     };
-    res.json(filmWithFullResimPath);
+    res.json(konserWithFullResimPath);
   } else {
-    res.status(404).json({ hata: "Film bulunamadı" });
+    res.status(404).json({ hata: "Konser bulunamadı" });
   }
 });
 
