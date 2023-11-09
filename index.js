@@ -17,7 +17,7 @@ app.use(cors(corsOptions));
 app.use(express.static("public"));
 
 // Endpoint dosyaları dahil edildi
-const filmlerRouter = require("./sayfalar/filmler");
+const filmlerRouter = require("./filmler");
 const tiyatroRouter = require("./sayfalar/tiyatro");
 const aileRouter = require("./sayfalar/aile");
 const sporRouter = require("./sayfalar/spor");
