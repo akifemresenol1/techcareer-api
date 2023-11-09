@@ -14,15 +14,16 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+// Statik dosyaları sunmak için "public" klasörünü kullan
 app.use(express.static("public"));
 
-// Endpoint dosyaları dahil edildi
+// Endpoint dosyalarını dahil et
 const filmlerRouter = require("./filmler");
 const tiyatroRouter = require("./sayfalar/tiyatro");
 const aileRouter = require("./sayfalar/aile");
 const sporRouter = require("./sayfalar/spor");
 
-// Endpoint yolları belirtildi
+// Endpoint yollarını belirt
 app.use("/api/filmler", filmlerRouter);
 app.use("/api/tiyatro", tiyatroRouter);
 app.use("/api/aile", aileRouter);
