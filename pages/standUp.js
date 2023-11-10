@@ -1,9 +1,7 @@
-// standUp.js
 const express = require("express");
 const router = express.Router();
 const path = require("path");
 
-// Stand-up verilerini içeri aktarın
 const standUp = [
   {
     id: 1,
@@ -152,7 +150,6 @@ router.post("/", (req, res) => {
   const yeniID = Math.max(...standUp.map((item) => item.id)) + 1;
   yeniStandUp.id = yeniID;
 
-  // Resim ismini değiştirin
   const yeniResimAdi = `standUp${yeniID}.jpg`;
   yeniStandUp.resim = `/${yeniResimAdi}`;
 

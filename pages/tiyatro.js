@@ -1,4 +1,3 @@
-// tiyatro.js
 const express = require("express");
 const router = express.Router();
 const path = require("path");
@@ -151,7 +150,6 @@ router.post("/", (req, res) => {
   const yeniID = Math.max(...tiyatro.map((item) => item.id)) + 1;
   yeniTiyatro.id = yeniID;
 
-  // Resim ismini değiştirin
   const yeniResimAdi = `tiyatro${yeniID}.jpg`;
   yeniTiyatro.resim = `/${yeniResimAdi}`;
 

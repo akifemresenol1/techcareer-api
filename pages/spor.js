@@ -1,4 +1,3 @@
-// spor.js
 const express = require("express");
 const router = express.Router();
 const path = require("path");
@@ -151,7 +150,6 @@ router.post("/", (req, res) => {
   const yeniID = Math.max(...spor.map((item) => item.id)) + 1;
   yeniSpor.id = yeniID;
 
-  // Resim ismini değiştirin
   const yeniResimAdi = `spor${yeniID}.jpg`;
   yeniSpor.resim = `/${yeniResimAdi}`;
 
