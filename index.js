@@ -1,15 +1,13 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path"); // path modülünü ekleyin
+const path = require("path");
 const app = express();
 const port = 3001;
 
-// Statik dosyaları sunmak için "public" klasörünü kullan
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.json());
 
-// CORS politikalarını yapılandır
 const corsOptions = {
   origin: "http://127.0.0.1:5500", // Erişime izin verilen etki alanı (istemci)
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
