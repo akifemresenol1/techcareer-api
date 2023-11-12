@@ -12,8 +12,12 @@ const konser = [
     livingRoom: "İstanbul Millet Bahçesi",
     explanation:
       "Duygusal şarkılarıyla ruhumuza dokunan, hislerimize tercüman olan Cem Adrian sevenleriyle hız kesmeden buluşmaya devam ediyor.",
-    price: 120,
-    resim: "/konser1.jpg",
+    prices: {
+      price1: 90,
+      price2: 100,
+      price3: 120,
+    },
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser1.jpg",
     startDate: "2023-11-01",
     endDate: "2023-11-15",
   },
@@ -27,7 +31,7 @@ const konser = [
     explanation:
       "Melike Şahin, uzun bir aranın ardından Kocaeli Arena'da hayranlarıyla buluşuyor.",
     price: 90,
-    resim: "/konser2.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser2.jpg",
     startDate: "2023-10-15",
     endDate: "2023-10-30",
   },
@@ -41,7 +45,7 @@ const konser = [
     explanation:
       "Sıla, unutulmaz şarkılarıyla Ankara Açıkhava Tiyatrosu'nda sevenleriyle buluşacak.",
     price: 110,
-    resim: "/konser3.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser3.jpg",
     startDate: "2023-12-05",
     endDate: "2023-12-20",
   },
@@ -55,7 +59,7 @@ const konser = [
     explanation:
       "Mert Demir, duygusal şarkılarıyla Izmir Fuar Alanı'nda müzikseverlere unutulmaz anlar yaşatacak.",
     price: 95,
-    resim: "/konser4.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser4.jpg",
     startDate: "2023-11-10",
     endDate: "2023-11-25",
   },
@@ -69,7 +73,7 @@ const konser = [
     explanation:
       "2005 yılında çıkardığı ‘Büyük İnsan’ şarkısıyla ismini geniş kitlelere duyurmayı başaran Gökhan Türkmen, ardından çıkardığı ‘Çatı Katı’, ‘Dön’, ‘Bir Öykü’ ve ‘Bitmesin’ şarkılarıyla ismini müzik dünyasına adını yazdırdı. 2005 yılında amatör olarak seslendirdiği Büyük İnsan adlı parçası ile video paylaşım sitesi Youtube'da beş milyondan fazla dinlenen Gökhan Türkmen, dinleyicisiyle buluşmaya devam ediyor.",
     price: 130,
-    resim: "/konser5.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser5.jpg",
     startDate: "2023-09-01",
     endDate: "2023-09-15",
   },
@@ -83,7 +87,7 @@ const konser = [
     explanation:
       "Hayko Cepkin, rock müziğin en güçlü şarkılarıyla Bursa Atatürk Stadyumu'nda unutulmaz bir konserle müzikseverlere enerji dolu anlar yaşatacak.",
     price: 85,
-    resim: "/konser6.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser6.jpg",
     startDate: "2023-10-01",
     endDate: "2023-10-15",
   },
@@ -97,7 +101,7 @@ const konser = [
     explanation:
       "19 Eylül 1998 yılında Gaziantep'te dünyaya gelen sevilen isim Sena Şener, güçlü sesiyle dinleyenleriyle buluşuyor. 'Bak Bana', 'Ölsem', 'Sevmemeliyiz' gibi şarkılarla bilinen yetenekli genç sanatçıyla, unutulmaz bir gece sizi bekliyor. ",
     price: 125,
-    resim: "/konser7.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser7.jpg",
     startDate: "2023-12-10",
     endDate: "2023-12-25",
   },
@@ -111,7 +115,7 @@ const konser = [
     explanation:
       "Unutmak Öyle Kolay mı Sandın, Herkes Gibisin, Masal Gibi şarkılarıyla ismini duyuran ve kendine has tarzıyla müziğe yeni bir soluk kazandıran Semicenk sizlerle buluşmaya geliyor.",
     price: 100,
-    resim: "/konser8.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser8.jpg",
     startDate: "2023-11-20",
     endDate: "2023-12-05",
   },
@@ -125,7 +129,7 @@ const konser = [
     explanation:
       "Selda Bağcan, rock müziğin en güçlü şarkılarıyla Malatya Meydanı'nda unutulmaz bir konserle müzikseverlere enerji dolu anlar yaşatacak.",
     price: 105,
-    resim: "/konser9.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser9.jpg",
     startDate: "2023-09-15",
     endDate: "2023-09-30",
   },
@@ -139,7 +143,7 @@ const konser = [
     explanation:
       "'Depresyondayım' şarkısıyla ismini geniş kitlelere duyuran Göksel, ardından çıkardığı yeni hitleriyle de kariyerinde adını altın harflerle yazdırdı. Göksel, geçmişten günümüze sevilen şarkılarını hayranlarıyla birlikte seslendirecek. ",
     price: 140,
-    resim: "/konser10.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser10.jpg",
     startDate: "2023-10-30",
     endDate: "2023-11-10",
   },
@@ -153,7 +157,7 @@ const konser = [
     explanation:
       "‘Ah nerede 90’lı yılların şarkıları’ dediğimizde akla ilk gelen isimlerden olan Yaşar, konseriyle seyircilerini geçmişte yolculuğa çıkarıyor. ‘Sebepsiz Fırtınam’, ‘Kumralım’, ‘Kör Bıçak’ ve ‘On Bir Ay’ gibi şarkıları Tük Pop Müziğine kazandıran Yaşar, canlı performansıyla izleyicilerini mest ediyor.",
     price: 115,
-    resim: "/konser11.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser11.jpg",
     startDate: "2023-09-20",
     endDate: "2023-10-05",
   },
@@ -167,7 +171,7 @@ const konser = [
     explanation:
       "'İyi olduğunuzu kanıtlarsanız kimse sizi ezemez' mottosuyla yola çıkan Lil Zey, 'Eskisi Gibi', 'Heveslenmem' ve '80 Kere' adlı şarkılarıyla bilinmektedir. Lil Zey sizlerle buluşmaya geliyor.",
     price: 80,
-    resim: "/konser12.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser12.jpg",
     startDate: "2023-12-01",
     endDate: "2023-12-15",
   },
@@ -181,7 +185,7 @@ const konser = [
     explanation:
       "Türk pop müziğinin en enerjik ve esprili kadın vokallerinden İrem Derici, milyonların diline dolanan şarkılarını sevenleriyle birlikte söylüyor. ",
     price: 105,
-    resim: "/konser13.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser13.jpg",
     startDate: "2023-10-10",
     endDate: "2023-10-25",
   },
@@ -195,7 +199,7 @@ const konser = [
     explanation:
       "‘Dünyadan Uzak’, ‘Ne Güzel Güldün’ ve ‘Hele Bi Gel’ gibi dillere pelesenk olmuş şarkılarıyla müzik dünyasındaki yerlerini sağlamlaştıran Pinhani, sahne alıyor. Son dönemde listelerde 'Bilir O Beni' şarkısıyla dinleyicisinin kulaklarının pasını silen Pinhani'nin en sevdiğiniz şarkılarına eşlik etmek için biletlerinizi hemen alın!",
     price: 95,
-    resim: "/konser14.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser14.jpg",
     startDate: "2023-11-25",
     endDate: "2023-12-10",
   },
@@ -209,7 +213,7 @@ const konser = [
     explanation:
       "Can Ozan, uzun bir aranın ardından Konya Arena'da hayranlarıyla buluşuyor.",
     price: 120,
-    resim: "/konser15.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser15.jpg",
     startDate: "2023-09-15",
     endDate: "2023-09-30",
   },
@@ -223,7 +227,7 @@ const konser = [
     explanation:
       "'Kalpsiz Romantik', 'Beni Sevdi Benden Çok' ve 'Tutmuyor Frenler' şarkılarıyla tanınan Rock müziğin başarılı gruplarından Redd dinleyicisiyle buluşuyor. ",
     price: 110,
-    resim: "/konser16.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser16.jpg",
     startDate: "2023-12-15",
     endDate: "2023-12-30",
   },
@@ -237,7 +241,7 @@ const konser = [
     explanation:
       "2022’nin başında Türkiye’nin ilk kendi romanı olan albümünü yayınlayan ve bugüne dek 5 albüme, sayısız tekli ve düete imza atan üretken ve özgün müzisyen Kalben dinleyicileri ile buluşuyor. Sen de bu eşsiz gecede yer almak istiyorsan, bu fırsatı kaçırma!",
     price: 100,
-    resim: "/konser17.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser17.jpg",
     startDate: "2023-10-05",
     endDate: "2023-10-20",
   },
@@ -251,7 +255,7 @@ const konser = [
     explanation:
       "KÖFN grubu gitarist, vokalist, şarkı yazarı Salman Tin ile prodüktör ve aranjör Bilge Kağan Etil’den oluşuyor. Elektro-pop ve dünya müziğinden beslenerek zamana uygun Türk pop müziği üretmek için çalıştıklarını söyleyen ikili, sahnelerinde dikkat çeken işlere imza atıyor, bileti alın ve bu eşsiz geceyi kaçırmayın ",
     price: 85,
-    resim: "/konser18.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser18.jpg",
     startDate: "2023-11-05",
     endDate: "2023-11-20",
   },
@@ -265,7 +269,7 @@ const konser = [
     explanation:
       "‘Nalan’, ‘Dargın’, ‘Beyaz Skandalım’ ve ‘Kor’ gibi şarkıların mimarı Emir Can İğrek, unutulmaz bir konsere imza atmaya geliyor. Sen de Emir Can İğrek konserinde unutulmaz bir gece yaşamak istiyorsan, seni de aramızda görmeyi çok isteriz!",
     price: 95,
-    resim: "/konser19.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser19.jpg",
     startDate: "2023-09-30",
     endDate: "2023-10-15",
   },
@@ -279,7 +283,7 @@ const konser = [
     explanation:
       "'Gamzedeyim Deva Bulmam', 'Ah Bir Ataş Ver', 'Fikrimin İnce Gülü', 'Çözemezsin', 'Sakladığın Bir Şeyler Var',  'Belki' ve 'En Dibine Kadar' gibi şarkılara yaptıkları farklı coverlar ile son döneme damga vuran Dedublüman, dinleyicileriyle buluşuyor. Sen de bu güzel gecede Dedublüman ile eğlenmek istiyorsan, biletini hemen al!",
     price: 120,
-    resim: "/konser20.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser20.jpg",
     startDate: "2023-10-20",
     endDate: "2023-11-05",
   },
@@ -293,7 +297,7 @@ const konser = [
     explanation:
       "Emre Aydın, Anadolu rock müziğinin en güzel şarkılarıyla Mardin Kalesi'nde unutulmaz bir konser veriyor.",
     price: 110,
-    resim: "/konser21.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser21.jpg",
     startDate: "2023-11-15",
     endDate: "2023-11-30",
   },
@@ -307,7 +311,7 @@ const konser = [
     explanation:
       "Yaşlı Amca, yeni albümünü Zonguldak Stadyumu'nda hayranlarına tanıtacak.",
     price: 95,
-    resim: "/konser22.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser22.jpg",
     startDate: "2023-09-05",
     endDate: "2023-09-20",
   },
@@ -321,7 +325,7 @@ const konser = [
     explanation:
       "'Ben Senden Vazgeçtim', 'Sen Bana Aitsin', 'Neden Bu Kadar Güzelsin' ve 'Ben Hala Vazgeçmedim' isimli şarkıları ile popülerleşen Skapova, dinleyicileriyle buluşmaya hazırlanıyor.",
     price: 130,
-    resim: "/konser23.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser23.jpg",
     startDate: "2023-12-30",
     endDate: "2023-01-15",
   },
@@ -335,7 +339,7 @@ const konser = [
     explanation:
       "'Seni Kırmışlar', 'Celladına Aşık' gibi şarkılarıyla milyonlarca kez dinlenmeye ulaşan Türk müzisyen; söz yazarı ve besteci Kubilay Karça, muhteşem sahne performansıyla sevenleriyle buluşmaya devam ediyor.",
     price: 100,
-    resim: "/konser24.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser24.jpg",
     startDate: "2023-09-25",
     endDate: "2023-10-10",
   },
@@ -349,7 +353,7 @@ const konser = [
     explanation:
       "Ati242, efsane geri dönüş konseriyle Sinop Limanı'nda müzikseverlere unutulmaz anlar yaşatacak.",
     price: 120,
-    resim: "/konser25.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser25.jpg",
     startDate: "2023-10-15",
     endDate: "2023-10-30",
   },
@@ -363,7 +367,7 @@ const konser = [
     explanation:
       "Deniz Tekin, akustik performansıyla Giresun Ormanı'nda hayranlarına unutulmaz bir gece yaşatacak.",
     price: 110,
-    resim: "/konser26.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser26.jpg",
     startDate: "2023-11-30",
     endDate: "2023-12-15",
   },
@@ -377,7 +381,7 @@ const konser = [
     explanation:
       "“Belki Üstümüzden Bir Kuş Geçer”, “Aşk Durdukça”, “Döneceksin Diye Söz Ver”, “Kafile”, “Ben Seni Arayamam”, “Haydi Gel İçelim” gibi şarkılarıyla gönüllere taht kuran Yüksek Sadakat, şehrine geliyor! Sen de bu eşsiz geceyi kaçırma!",
     price: 125,
-    resim: "/konser27.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser27.jpg",
     startDate: "2023-09-10",
     endDate: "2023-09-25",
   },
@@ -391,7 +395,7 @@ const konser = [
     explanation:
       "Grup Zakkum, sevilen şarkılarını hayranlarıyla birlikte seslendiriyor. 'Anason' ve 'Ben Ne Yangınlar Gördüm' şarkılarıyla gönüllere kazınan grup, dinleyicisine keyif dolu bir gece yaşatmayı vaadediyor. ",
     price: 95,
-    resim: "/konser28.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser28.jpg",
     startDate: "2023-11-20",
     endDate: "2023-12-05",
   },
@@ -405,7 +409,7 @@ const konser = [
     explanation:
       "Feridun Düzağaç, rock gecesi için Kars Sahili'nde hayranlarıyla buluşuyor.",
     price: 120,
-    resim: "/konser29.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser29.jpg",
     startDate: "2023-12-20",
     endDate: "2023-01-05",
   },
@@ -419,7 +423,7 @@ const konser = [
     explanation:
       "Velet, rap müziğin en güçlü şarkılarıyla Çankırı Stadyumu'nda unutulmaz bir konserle müzikseverlere enerji dolu anlar yaşatacak.",
     price: 105,
-    resim: "/konser30.jpg",
+    img_url: "https://techcareer-api2.vercel.app/konser-images/konser30.jpg",
     startDate: "2023-09-20",
     endDate: "2023-10-05",
   },

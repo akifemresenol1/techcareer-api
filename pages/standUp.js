@@ -6,8 +6,17 @@ const standUp = [
   {
     id: 1,
     categories: "standUp",
+    name: "Doğu Demirkol",
+    title: "Komedi Festivali",
     cities: "İstanbul",
-    price: 120,
+    livingRoom: "Bostancı Gösteri Merkezi",
+    explanation:
+      "Doğu Demirkol'la stund-up gösterisi. 1 saat 30 dakika sürecek gösteriye katılmak için biletinizi alın.",
+    prices: {
+      price1: 190,
+      price2: 250,
+      price3: 370,
+    },
     resim: "/standUp1.jpg",
     startDate: "2023-11-01",
     endDate: "2023-11-15",
@@ -15,8 +24,17 @@ const standUp = [
   {
     id: 2,
     categories: "standUp",
-    cities: "Kocaeli",
-    price: 90,
+    name: "Sergen Deveci",
+    title: "İndirim Festivali",
+    cities: "İstanbul",
+    livingRoom: "Watergarden Gösteri Merkezi - Duru Tiyatro",
+    explanation:
+      "Instagram'da çektiği videolarla milyonların beğenisini ve sevgisini kazanan Sergen Deveci, tek kişilik stand-up gösterisi ile sizlerle.",
+    prices: {
+      price1: 150,
+      price2: 230,
+      price3: 290,
+    },
     resim: "/standUp2.jpg",
     startDate: "2023-10-15",
     endDate: "2023-10-30",
@@ -24,8 +42,17 @@ const standUp = [
   {
     id: 3,
     categories: "standUp",
-    cities: "Ankara",
-    price: 110,
+    name: "Mesut Süre",
+    title: "Talk Show",
+    cities: "İstanbul",
+    livingRoom: "Watergarden Gösteri Merkezi - Duru Tiyatro",
+    explanation:
+      "Mesut Süre İle İlişki Testi çiftlerin tanışma hikayelerinden kıskançlıklarına, eski sevgililerinden arkadaşlarıyla ve aileleriyle bir çift olarak kurdukları ilişkiye kadar pek çok şeyi, Mesut Süre’nin yer yer keskin ama her daim eğlenceli ve neşeli moderatörlüğü eşliğinde paylaştıkları bir talk Show formatıdır. ",
+    prices: {
+      price1: 220,
+      price2: 290,
+      price3: 350,
+    },
     resim: "/standUp3.jpg",
     startDate: "2023-12-05",
     endDate: "2023-12-20",
@@ -33,8 +60,17 @@ const standUp = [
   {
     id: 4,
     categories: "standUp",
-    cities: "İzmir",
-    price: 95,
+    name: "Meksika Açmazı",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Mall of İstanbul MOİ Sahne",
+    explanation:
+      "Mesut Süre, Anlatanadam ve Fazlı Polat'ın benzersiz sahne performanslarıyla Meksika Açmazı, artık sadece podcast olarak değil canlı bir gösteri olarak da kesintisiz kahkaha vadediyor...",
+    prices: {
+      price1: 350,
+      price2: 430,
+      price3: 490,
+    },
     resim: "/standUp4.jpg",
     startDate: "2023-11-10",
     endDate: "2023-11-25",
@@ -42,8 +78,17 @@ const standUp = [
   {
     id: 5,
     categories: "standUp",
-    cities: "Antalya",
-    price: 130,
+    name: "Zafer Algöz & Can Yılmaz- Burda Olan Burda Kalır",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "İş Sana İş Kuleleri Salonu",
+    explanation:
+      "Sosyal medyada paylaşımları ve Burda Olan Burda Kalır adını verdikleri milyonlarca izlenmeye sahip YouTube kanalları ile çok beğenilen Zafer Algöz ve Can Yılmaz, aynı adı verdikleri, farklı içerik ile gerçekleştirdikleri iki kişilik stand-up gösterileri “Burda Olan Burda Kalır”ı İstanbul Komedi Festival’i kapsamında izleyebilirsiniz. ",
+    prices: {
+      price1: 330,
+      price2: 400,
+      price3: 450,
+    },
     resim: "/standUp5.jpg",
     startDate: "2023-09-01",
     endDate: "2023-09-15",
@@ -51,8 +96,17 @@ const standUp = [
   {
     id: 6,
     categories: "standUp",
-    cities: "Bursa",
-    price: 85,
+    name: "Okan Çabalar",
+    title: "İndirim Festivali",
+    cities: "İstanbul",
+    livingRoom: "Trump AVM Sahne",
+    explanation:
+      "Yer aldığı birçok skeç programı, dizi ve filmlerde yarattığı başarılı tiplemelerle mizahseverlerin beğenisini kazanan Okan Çabalar, izleyicisiyle buluşmaya devam ediyor. ",
+    prices: {
+      price1: 230,
+      price2: 300,
+      price3: 350,
+    },
     resim: "/standUp6.jpg",
     startDate: "2023-10-01",
     endDate: "2023-10-15",
@@ -60,8 +114,17 @@ const standUp = [
   {
     id: 7,
     categories: "standUp",
-    cities: "Mersin",
-    price: 125,
+    name: "İlker Gümüşoluk",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Watergarden Gösteri Merkezi - Duru Tiyatro",
+    explanation:
+      "İlker Gümüşoluk, tek kişilik gösterisiyle izleyicisiyle buluşmaya devam ediyor. 15 Yıldır Türkiye’nin her köşesinde 1000’den fazla gösteri yapan İlker Gümüşoluk, tek kişilik gösterisinde ikili ilişkiler başta olmak üzere, hayata dair birçok hikaye ve tespitini seyircisiyle buluşturuyor. Komedyen, özellikle YouTube kanalında yayınladığı Apartman Sohbetleri projesiyle ve instagram hesabında paylaştığı skeçlerle ciddi bir seyirci kitlesine ulaştı. İlker Gümüşoluk aynı zamanda son iki yıldır YouTube Değişim Elçiliği görevini üstlendi. YouTube için özel projeler üretiyor. ",
+    prices: {
+      price1: 250,
+      price2: 330,
+      price3: 370,
+    },
     resim: "/standUp7.jpg",
     startDate: "2023-12-10",
     endDate: "2023-12-25",
@@ -69,8 +132,17 @@ const standUp = [
   {
     id: 8,
     categories: "standUp",
-    cities: "Gaziantep",
-    price: 100,
+    name: "Deniz Göktaş",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Beşiktaş Kültür Merkezi",
+    explanation:
+      "Deniz Göktaş: Youtube’a yüklediği tek kişilik Stand-Up Gösterisi “Selam Selam” ve “Deniz Göktaş’a Ayıracak Vaktim Yok” Podcast’inden tanıyabileceğiniz Deniz Göktaş yeni tek kişilik gösterisi ile 3 Aralık tarihinde Bkm Tiyatro’da. ",
+    prices: {
+      price1: 200,
+      price2: 250,
+      price3: 300,
+    },
     resim: "/standUp8.jpg",
     startDate: "2023-11-20",
     endDate: "2023-12-05",
@@ -78,8 +150,17 @@ const standUp = [
   {
     id: 9,
     categories: "standUp",
-    cities: "Eskişehir",
-    price: 105,
+    name: "Tahsin Hasoğlu",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Trump AVM Sahne",
+    explanation:
+      "Tahsin Hasoğlu, sosyal medya hesaplarından paylaştığı 'Başakşehir'in Tek Taraftarı', 'Gamsız Teknik Direktör Arif', 'Kafa Adam İrfan' adlı videolarla kısa sürede yüz binlerce takipçiye ulaştı. 200'ün üzerinde içerik hazırlayan Hasoğlu, üzerinde içerik hazırlayan Tahsin Hasoğlu, tek kişilik stand-up gösterisiyle sahnelerde de kahkaha attırıyor.",
+    prices: {
+      price1: 170,
+      price2: 230,
+      price3: 280,
+    },
     resim: "/standUp9.jpg",
     startDate: "2023-09-15",
     endDate: "2023-09-30",
@@ -87,8 +168,17 @@ const standUp = [
   {
     id: 10,
     categories: "standUp",
-    cities: "Trabzon",
-    price: 140,
+    name: "Özgür Turhan",
+    title: "İndirim Festivali",
+    cities: "İstanbul",
+    livingRoom: "Trump AVM Sahne",
+    explanation:
+      "Kamusal Mizah’ın kurucusu Komedyen Özgür Turhan, hiciv dolu gösterisi ile seyirciyle buluşuyor. 'Etkinlik Süresi: 2 perde - 1 saat 45 dakika'",
+    prices: {
+      price1: 230,
+      price2: 300,
+      price3: 350,
+    },
     resim: "/standUp10.jpg",
     startDate: "2023-10-30",
     endDate: "2023-11-10",
@@ -96,8 +186,17 @@ const standUp = [
   {
     id: 11,
     categories: "standUp",
-    cities: "Adana",
-    price: 115,
+    name: "Cem İşçiler & Fazlı Polat - Çimen Show",
+    title: "Talk Show",
+    cities: "İstanbul",
+    livingRoom: "İş Sana İş Kuleleri Salonu",
+    explanation:
+      "Cem İşçiler & Fazlı Polat - Çimen Talks Show ile sizlerle. Sen de bu geceye dahil olmak istiyorsan unutma ki; Çimen Talks Show'a katılmak için biletinizi alın.",
+    prices: {
+      price1: 430,
+      price2: 500,
+      price3: 550,
+    },
     resim: "/standUp11.jpg",
     startDate: "2023-09-20",
     endDate: "2023-10-05",
@@ -105,8 +204,17 @@ const standUp = [
   {
     id: 12,
     categories: "standUp",
-    cities: "Bolu",
-    price: 80,
+    name: "Burak Satıbol",
+    title: "İndirim Festivali",
+    cities: "İstanbul",
+    livingRoom: "Kartal Sanal Tiyatrosu Salonu",
+    explanation:
+      "İşler Güçler’in Salih abisi, Yusuf Yusuf’un Yusuf’u, Mahşer-i Cümbüş’ün Burak’ı, hikayelerini anlatmaya geliyor. Kimi zaman sinema aleminden, kimi zaman ilk gençliğinden kızgınlıkları, mutlulukları ve cevap bulamadıkları ile seyircisini oyun oynamaya çağırıyor. ",
+    prices: {
+      price1: 210,
+      price2: 250,
+      price3: 300,
+    },
     resim: "/standUp12.jpg",
     startDate: "2023-12-01",
     endDate: "2023-12-15",
@@ -114,8 +222,16 @@ const standUp = [
   {
     id: 13,
     categories: "standUp",
-    cities: "Malatya",
-    price: 105,
+    name: "Sefa Doğanay",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Beşiktaş Kültür Merkezi",
+    explanation: "Sefa Doğanay - Kokpit sizlerle...",
+    prices: {
+      price1: 230,
+      price2: 290,
+      price3: 350,
+    },
     resim: "/standUp13.jpg",
     startDate: "2023-10-10",
     endDate: "2023-10-25",
@@ -123,8 +239,17 @@ const standUp = [
   {
     id: 14,
     categories: "standUp",
-    cities: "Samsun",
-    price: 95,
+    name: "Armağan Çağlayan ile 'Size Anlatacaklarım Var'",
+    title: "Talk Show",
+    cities: "İstanbul",
+    livingRoom: "Cevahir Sahne Salon A",
+    explanation:
+      "Türkiye’nin en önemli televizyon yapımcılarından Armağan Çağlayan, sektörde 30 yılı geride bırakmaya hazırlanırken, milyonların izlediği YouTube kanalında da yaptığı “sıra dışı” röportajlarla da gündemin nabzını tutmaya, dikkatleri çekmeye devam ediyor.  ",
+    prices: {
+      price1: 230,
+      price2: 300,
+      price3: 350,
+    },
     resim: "/standUp14.jpg",
     startDate: "2023-11-25",
     endDate: "2023-12-10",
@@ -132,13 +257,21 @@ const standUp = [
   {
     id: 15,
     categories: "standUp",
-    cities: "Konya",
-    price: 120,
+    name: "Özgür Uysal ile İnce İşler",
+    title: "Komedi Festivali",
+    cities: "İstanbul",
+    livingRoom: "Jolly Joker Pub Kanyon",
+    explanation:
+      "Youtube'da kadın-erkek ilişkileri, cinsel yanlışlar, psikolojik ve sosyolojik taktiklerden oluşan video serileriyle bilinen Özgür Uysal tabulardan uzak bir dünyayı vadediyor bize. ",
+    prices: {
+      price1: 320,
+      price2: 400,
+      price3: 480,
+    },
     resim: "/standUp15.jpg",
     startDate: "2023-09-15",
     endDate: "2023-09-30",
   },
-  // Diğer stand-up verileri buraya eklenir...
 ];
 
 router.get("/", (req, res) => {
