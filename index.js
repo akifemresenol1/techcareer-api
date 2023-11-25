@@ -8,12 +8,12 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(express.json());
 
-const corsOptions = {
-  origin: "http://127.0.0.1:5500", // Erişime izin verilen etki alanı (istemci)
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
-};
+// const corsOptions = {
+//   origin: "http://127.0.0.1:5500", // Erişime izin verilen etki alanı (istemci)
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE", // İzin verilen HTTP metodları
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // Endpoint dosyalarını dahil et
 const konserRouter = require("./pages/konser");
